@@ -1,0 +1,14 @@
+Тестовое задание на верстку
+
+
+Макет в фигме
+https://www.figma.com/file/zTzATxQojcX5hO0sr5jzel/Test-Landing
+
+Ссылка на шрифт:
+https://webfonts.pro/base-web-fonts/sans-serif-grotesque/898-whitney.html
+
+
+Необходимо сверстать макет страницы по методологии БЭМ и сделать адаптив.
+Использовать препроцессор SCSS
+
+При нажатии на кнопку Войти должна открываться форма авторизации.
