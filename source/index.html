@@ -1,24 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test-Landing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test-Landing</title>
 </head>
 <body class="page__body">
-    <header class="page__header">
-        <p>
-            
-        </p>
-        <nav class="main-nav">
-            
-        </nav>
-    </header>
-    <main class="page__main">
-
-    </main>
-    <footer class="page__footer">
-
-    </footer>    
+  <header class="page__header">
+    <p>
+      <img src="./img/logo-test-landing.svg" width="147" height="32" alt="logo test landing">
+    </p>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="" class="main-nav__link">Клиентам</a></li>
+      </ul>
+      <ul class="main-nav__user-list">
+        <li class="main-nav__user-item"><a href="" class="main-nav__user-link">Войти</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page__main main">
+    <section class="main__intro">
+      <h1 class="main__title">Подбор авто в лизинг по выгодной цене</h1>
+      <p class="main__subject">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+      <button class="main__register-btn" type="button">Регистрация</button>
+    </section>
+    <section class="main__features features">
+      <h2 class="features__title">Меньше условий – больше возможностей</h2>
+      <div class="features__wrapper">
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__inner-wrapper">
+              <h3 class="features__item-title">Экономия времени</h3>
+              <p class="features__item-description">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
+            </div>
+            <p class="features__item-pic">
+              <img src="./img/time.svg" width="193" height="193" alt="Time Figure">
+            </p>
+          </li>
+          <li class="features__item">
+            <div class="features__inner-wrapper">
+              <h3 class="features__item-title">Никаких задержек</h3>
+              <p class="features__item-description">Вы получаете запросы сразу же после отправки клиентом.</p>
+            </div>
+            <p class="features__item-pic">
+              <img src="./img/speed.svg" width="193" height="193" alt="Speed Figure">
+            </p>
+          </li>
+          <li class="features__item">
+            <div class="features__inner-wrapper">
+              <h3 class="features__item-title">Максимальная информативность</h3>
+              <p class="features__item-description">В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
+            </div>
+            <p class="features__item-pic">
+              <img src="./img/info.svg" width="193" height="193" alt="Information Figure">
+            </p>
+          </li>
+          <li class="features__item">
+            <div class="features__inner-wrapper">
+              <h3 class="features__item-title">Удобство общения</h3>
+              <p class="features__item-description">Для каждого запроса у вас открыт чат
+                с клиентом с возможностью отправки документов.</p>
+            </div>
+            <p class="features__item-pic">
+              <img src="./img/chat.svg" width="193" height="193" alt="Chat Figure">
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="main__registration registration">
+      <h2 class="visually-hidden">Регистрация Клиента</h2>
+      <p class="registration__subject">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
+      <button type="button" class="registration__btn">Регистрация</button>
+    </section>
+    <section class="modal">
+      <h2 class="visually-hidden">Данные авторизации</h2>
+      <span class="modal__close"></span>
+      <form class="modal__authorization-form" action="#">
+        <fieldset class="modal__field">
+          <legend class="modal__title">Авторизация</legend>
+          <div class="modal__inner-wrapper">
+            <label class="modal__label" for="email">E-mail</label>
+            <input class="modal__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+          </div>
+          <div class="modal__inner-wrapper">
+            <label class="modal__label" for="password">Пароль</label>
+            <input class="modal__input" type="password" id="password" name="password" placeholder="Введите пароль">
+          </div>
+        </fieldset>
+        <button type="submit" class="modal__btn">Войти</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
