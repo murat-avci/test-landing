@@ -1,0 +1,15 @@
+.page-header {
+  background: linear-gradient(90deg, $bg-start, $bg-end);
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 33px 388px 33px 379px;
+}
+
+.page-header__intro {
+  margin-top: 100px;
+  margin-left: 375px;
+}

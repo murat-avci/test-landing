@@ -3,29 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/styles.min.css">
   <title>Test-Landing</title>
 </head>
 <body class="page__body">
-  <header class="page__header">
-    <p>
-      <img src="./img/logo-test-landing.svg" width="147" height="32" alt="logo test landing">
-    </p>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="" class="main-nav__link">Клиентам</a></li>
-      </ul>
-      <ul class="main-nav__user-list">
-        <li class="main-nav__user-item"><a href="" class="main-nav__user-link">Войти</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="page__main main">
-    <section class="main__intro">
-      <h1 class="main__title">Подбор авто в лизинг по выгодной цене</h1>
-      <p class="main__subject">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
-      <button class="main__register-btn" type="button">Регистрация</button>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <p class="page-header__logo">
+        <img src="./img/logo-test-landing.svg" width="147" height="32" alt="logo test landing">
+      </p>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="" class="site-list__link">Клиентам</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item"><a href="#" class="user-list__login js-login">Войти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="page-header__intro intro">
+      <h1 class="intro__title">Подбор авто в лизинг по выгодной цене</h1>
+      <p class="intro__subject">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+      <a class="intro__link" href="#" type="button">Регистрация</a>
     </section>
-    <section class="main__features features">
+  </header>
+  <main class="page-main">
+    <section class="page-main__features features">
       <h2 class="features__title">Меньше условий – больше возможностей</h2>
       <div class="features__wrapper">
         <ul class="features__list">
@@ -69,7 +73,7 @@
         </ul>
       </div>
     </section>
-    <section class="main__registration registration">
+    <section class="page-main__registration registration">
       <h2 class="visually-hidden">Регистрация Клиента</h2>
       <p class="registration__subject">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
       <button type="button" class="registration__btn">Регистрация</button>

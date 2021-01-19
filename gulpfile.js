@@ -1,3 +1,5 @@
+"use strict";
+
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
@@ -9,10 +11,10 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
-const del =require("del");
-const terser = require('gulp-terser');
-const htmlmin = require('gulp-htmlmin');
+const svgstore = require("gulp-svgstore")
+const del = require("del");
+const terser = require("gulp-terser");
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -27,7 +29,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 };
 
@@ -88,7 +90,7 @@ exports.server = server;
 
 const copy = () => {
   return gulp.src([
-    "source/css/style.css",
+    "source/css/*.css",
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
@@ -115,7 +117,7 @@ exports.clean = clean;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
-  gulp.watch("source/js/*.js", gulp.series("copy"));
+  // gulp.watch("source/js/*.js", gulp.series("copy"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -133,23 +135,22 @@ const html = () => {
 
 exports.html = html;
 
+// //JS
 
-//JS
+// const js = () => {
+//   return gulp.src('bundles/bundle.js')
+//     .pipe(plumber())
+//     .pipe(terser())
+//     // .pipe(rename("mobile-top-menu.min.js"))
+//     .pipe(gulp.dest("build/bundles"))
+//     .pipe(sync.stream());
+// };
 
-const js = () => {
-  return gulp.src('source/js/mobile-top-menu.js')
-    .pipe(plumber())
-    .pipe(terser())
-    .pipe(rename("mobile-top-menu.min.js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
-};
-
-exports.js = js;
+// exports.js = js;
 
 // Build
 
-gulp.task("build", gulp.series(clean, copy, styles, images, webpImages, sprite, html, js));
+gulp.task("build", gulp.series(clean, copy, styles, images, webpImages, sprite, html));
 
 // Gulp start
 

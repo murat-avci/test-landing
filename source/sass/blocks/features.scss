@@ -1,0 +1,34 @@
+.features {
+  margin: 130px auto 0;
+}
+
+.features__wrapper {
+  margin-top: 50px;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.features__item {
+  display: flex;
+  outline: 1px solid blue;
+  padding: 21px 10px 21px 40px;
+}
+
+.features__inner-wrapper {
+  outline: 1px solid red;
+  margin: 22px 0;
+}
+
+.features__item-description {
+  margin-top: 22px;
+}
+
+.features__item-pic {
+  min-width: 193px;
+  height: 193px;
+  margin-left: 35px;
+}
