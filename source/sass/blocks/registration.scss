@@ -1,12 +1,86 @@
 .registration {
+  position: relative;
   background: linear-gradient(90deg, $bg-start, $bg-end);
+  background-repeat: no-repeat;
   max-width: 1170px;
   width: 100%;
-  margin: 130px auto;
-  padding: 70px 542px 70px 70px;
+  margin: 130px auto 185px;
+  padding: 70px 0 70px 70px;
   border-radius: 10px;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: url("../../img/bg-registration.png");
+    top: 19px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.registration__subject {
+  @include text(30px,45px,600,$basic-white);
+  width: 558px;
 }
 
 .registration__btn {
+  @include text(18px,18px,600,$basic-white);
   margin-top: 46px;
+  padding: 16px 60px;
+  border: none;
+  background-color: $button;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    @include btn-hover($button, $basic-white);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .registration {
+    max-width: 903px;
+    margin: 80px auto 120px;
+    padding: 40px 0 40px 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/bg-registration.png");
+      background-repeat: no-repeat;
+      top: 19px;
+      bottom: 19px;
+      right: 0;
+      width: 80%;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .registration {
+    margin: 30px 0 30px;
+    padding: 20px;
+
+    &::before {
+      background-size: cover;
+      top: 19px;
+      bottom: 75px;
+    }
+  }
+
+  .registration__subject {
+    @include text(16px,21px,600,$basic-white);
+    text-align: left;
+    max-width: 188px;
+  }
+
+  .registration__btn {
+    @include text(16px,18px,600,$basic-white);
+    padding: 16px 0;
+    max-width: 188px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
 }

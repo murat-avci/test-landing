@@ -1,21 +1,18 @@
-.page {
-  background-color: $basic-white;
-}
-
-.page__body {
-  font-family: "Whitney", sans-serif;
-  height: 100%;
-}
-
 .overlay {
   opacity: 0;
   visibility: hidden;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba($color: $shadow, $alpha: 0.3);
   z-index: 20;
   transition: 0.3s all;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

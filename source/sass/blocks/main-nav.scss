@@ -1,7 +1,10 @@
 .main-nav {
-  outline: 2px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 261px;
+
+  @media (max-width: $mobile-width) {
+    margin: 20px auto 0;
+  }
 }

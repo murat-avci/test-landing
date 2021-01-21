@@ -1,5 +1,12 @@
-
 .page-main__features {
   max-width: 1170px;
   width: 100%;
+
+  @media (max-width: $tablet-width) {
+    max-width: 903px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 360px;
+  }
 }

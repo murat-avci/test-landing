@@ -117,7 +117,9 @@ exports.clean = clean;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
-  // gulp.watch("source/js/*.js", gulp.series("copy"));
+  gulp.watch("source/img/*.*", gulp.series("images"));
+  gulp.watch("source/js/*.js", gulp.series("copy"));
+  gulp.watch("source/js/*.js").on("change", sync.reload);
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -135,22 +137,20 @@ const html = () => {
 
 exports.html = html;
 
-// //JS
+//JS
 
-// const js = () => {
-//   return gulp.src('bundles/bundle.js')
-//     .pipe(plumber())
-//     .pipe(terser())
-//     // .pipe(rename("mobile-top-menu.min.js"))
-//     .pipe(gulp.dest("build/bundles"))
-//     .pipe(sync.stream());
-// };
+const js = () => {
+  return gulp.src("source/js/index.js")
+    .pipe(plumber())
+    .pipe(gulp.dest("build/js/"))
+    .pipe(sync.stream());
+};
 
-// exports.js = js;
+exports.js = js;
 
 // Build
 
-gulp.task("build", gulp.series(clean, copy, styles, images, webpImages, sprite, html));
+gulp.task("build", gulp.series(clean, copy, styles, images, webpImages, sprite, html, js));
 
 // Gulp start
 

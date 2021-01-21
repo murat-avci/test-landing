@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Whitney";
   src: local(""),
-    url("../fonts/Whitney-Semibold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Whitney-Semibold.woff") format("woff"),
-    url("../fonts/Whitney-Semibold.ttf") format("truetype");
-  font-weight: 600;
+    url("../fonts/Whitney-Semibold.eot?#iefix") format("embedded-opentype supports variations"),
+    url("../fonts/Whitney-Semibold.woff") format("woff supports variations"),
+    url("../fonts/Whitney-Semibold.ttf") format("truetype supports variations");
+  font-weight: 100 600;
   font-style: normal;
   font-display: swap;
 }
@@ -12,10 +12,31 @@
 @font-face {
   font-family: "Whitney";
   src: local(""),
-    url("../fonts/Whitney-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Whitney-Medium.woff") format("woff"),
-    url("../fonts/Whitney-Medium.ttf") format("truetype");
-  font-weight: 500;
+    url("../fonts/Whitney-Medium.eot?#iefix") format("embedded-opentype supports variations"),
+    url("../fonts/Whitney-Medium.woff") format("woff supports variations"),
+    url("../fonts/Whitney-Medium.ttf") format("truetype supports variations");
+  font-weight: 100 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Whitney Book";
+  src: local(""),
+    url("../fonts/Whitney-Book.eot?#iefix") format("embedded-opentype supports variations"),
+    url("../fonts/Whitney-Book.woff") format("woff supports variations"),
+    url("../fonts/Whitney-Book.ttf") format("truetype supports variations");
+  font-weight: 100 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whitney";
+  src: local(""),
+    url("../fonts/Whitney-Light.eot?#iefix") format("embedded-opentype supports variations"),
+    url("../fonts/Whitney-Light.woff") format("woff supports variations"),
+    url("../fonts/Whitney-Light.ttf") format("truetype supports variations");
+  font-weight: 100 300;
   font-style: normal;
   font-display: swap;
 }
@@ -23,10 +44,10 @@
 @font-face {
   font-family: "Whitney";
   src: local(""),
-    url("../fonts/Whitney-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Whitney-Light.woff") format("woff"),
-    url("../fonts/Whitney-Light.ttf") format("truetype");
-  font-weight: 300;
+    url("../fonts/Whitney-Bold.eot?#iefix") format("embedded-opentype supports variations"),
+    url("../fonts/Whitney-Bold.woff") format("woff supports variations"),
+    url("../fonts/Whitney-Bold.ttf") format("truetype supports variations");
+  font-weight: 100 700;
   font-style: normal;
   font-display: swap;
 }
@@ -34,21 +55,32 @@
 @font-face {
   font-family: "Whitney";
   src: local(""),
-    url("../fonts/Whitney-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Whitney-Bold.woff") format("woff"),
-    url("../fonts/Whitney-Bold.ttf") format("truetype");
-  font-weight: bold;
+    url("../fonts/Whitney-Black.eot?#iefix") format("embedded-opentype supports variations"),
+    url("../fonts/Whitney-Black.woff") format("woff supports variations"),
+    url("../fonts/Whitney-Black.ttf") format("truetype supports variations");
+  font-weight: 100 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Whitney";
+  font-family: "Segoe UI";
   src: local(""),
-    url("../fonts/Whitney-Black.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Whitney-Black.woff") format("woff"),
-    url("../fonts/Whitney-Black.ttf") format("truetype");
-  font-weight: 500;
+    url("../../fonts/SegoeUI-SemiBold.eot?#iefix") format("embedded-opentype supports variations"),
+    url("../../fonts/SegoeUI-SemiBold.woff") format("woff supports variations"),
+    url("../../fonts/SegoeUI-SemiBold.ttf") format("truetype supports variations");
+  font-weight: 100 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local(""),
+    url("../../fonts/SegoeUI.eot?#iefix") format("embedded-opentype supports variations"),
+    url("../../fonts/SegoeUI.woff") format("woff supports variations"),
+    url("../../fonts/SegoeUI.ttf") format("truetype supports variations");
+  font-weight: 100 400;
   font-style: normal;
   font-display: swap;
 }

@@ -8,94 +8,122 @@
   <title>Test-Landing</title>
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <p class="page-header__logo">
-        <img src="./img/logo-test-landing.svg" width="147" height="32" alt="logo test landing">
-      </p>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="" class="site-list__link">Клиентам</a></li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item"><a href="#" class="user-list__login js-login">Войти</a></li>
-        </ul>
-      </nav>
-    </div>
-    <section class="page-header__intro intro">
-      <h1 class="intro__title">Подбор авто в лизинг по выгодной цене</h1>
-      <p class="intro__subject">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
-      <a class="intro__link" href="#" type="button">Регистрация</a>
-    </section>
-  </header>
-  <main class="page-main">
-    <section class="page-main__features features">
-      <h2 class="features__title">Меньше условий – больше возможностей</h2>
-      <div class="features__wrapper">
-        <ul class="features__list">
-          <li class="features__item">
-            <div class="features__inner-wrapper">
-              <h3 class="features__item-title">Экономия времени</h3>
-              <p class="features__item-description">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
-            </div>
-            <p class="features__item-pic">
-              <img src="./img/time.svg" width="193" height="193" alt="Time Figure">
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="features__inner-wrapper">
-              <h3 class="features__item-title">Никаких задержек</h3>
-              <p class="features__item-description">Вы получаете запросы сразу же после отправки клиентом.</p>
-            </div>
-            <p class="features__item-pic">
-              <img src="./img/speed.svg" width="193" height="193" alt="Speed Figure">
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="features__inner-wrapper">
-              <h3 class="features__item-title">Максимальная информативность</h3>
-              <p class="features__item-description">В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
-            </div>
-            <p class="features__item-pic">
-              <img src="./img/info.svg" width="193" height="193" alt="Information Figure">
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="features__inner-wrapper">
-              <h3 class="features__item-title">Удобство общения</h3>
-              <p class="features__item-description">Для каждого запроса у вас открыт чат
-                с клиентом с возможностью отправки документов.</p>
-            </div>
-            <p class="features__item-pic">
-              <img src="./img/chat.svg" width="193" height="193" alt="Chat Figure">
-            </p>
-          </li>
-        </ul>
+  <div class="page__container">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <p class="page-header__logo">
+          <img src="./img/logo-global-search.svg" width="242" height="50" alt="logo Global Search">
+        </p>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="" class="site-list__link">Клиентам</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item"><a href="#" class="user-list__login js-login">
+              <svg class="user-list__login-icon" width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon-login"></use>
+              </svg>Войти</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-    <section class="page-main__registration registration">
-      <h2 class="visually-hidden">Регистрация Клиента</h2>
-      <p class="registration__subject">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
-      <button type="button" class="registration__btn">Регистрация</button>
-    </section>
-    <section class="modal">
-      <h2 class="visually-hidden">Данные авторизации</h2>
-      <span class="modal__close"></span>
-      <form class="modal__authorization-form" action="#">
-        <fieldset class="modal__field">
-          <legend class="modal__title">Авторизация</legend>
-          <div class="modal__inner-wrapper">
-            <label class="modal__label" for="email">E-mail</label>
-            <input class="modal__input" type="email" id="email" name="email" placeholder="Введите e-mail">
-          </div>
-          <div class="modal__inner-wrapper">
-            <label class="modal__label" for="password">Пароль</label>
-            <input class="modal__input" type="password" id="password" name="password" placeholder="Введите пароль">
-          </div>
-        </fieldset>
-        <button type="submit" class="modal__btn">Войти</button>
-      </form>
-    </section>
-  </main>
+      <section class="page-header__intro intro">
+        <div class="intro__wrapper">
+          <h1 class="intro__title">Подбор авто в лизинг по выгодной цене</h1>
+          <p class="intro__subject">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+          <a class="intro__link" href="#">Регистрация</a>
+        </div>
+        <p class="intro__pic">
+          <img src="./img/intro.png" width="689" height="442" alt="Intro Picture">
+        </p>
+      </section>
+    </header>
+    <main class="page-main">
+      <section class="page-main__features features">
+        <h2 class="features__title">Меньше условий – больше возможностей</h2>
+        <div class="features__wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__inner-wrapper">
+                <h3 class="features__item-title">Экономия времени</h3>
+                <p class="features__item-description">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
+              </div>
+              <p class="features__item-pic">
+                <img src="./img/time.svg" width="193" height="193" alt="Time Figure">
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__inner-wrapper">
+                <h3 class="features__item-title">Никаких задержек</h3>
+                <p class="features__item-description">Вы получаете запросы сразу же после отправки клиентом.</p>
+              </div>
+              <p class="features__item-pic">
+                <img src="./img/speed.svg" width="193" height="193" alt="Speed Figure">
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__inner-wrapper">
+                <h3 class="features__item-title">Максимальная информативность</h3>
+                <p class="features__item-description">В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
+              </div>
+              <p class="features__item-pic">
+                <img src="./img/info.svg" width="193" height="193" alt="Information Figure">
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__inner-wrapper">
+                <h3 class="features__item-title">Удобство общения</h3>
+                <p class="features__item-description">Для каждого запроса у вас открыт чат
+                  с клиентом с возможностью отправки документов.</p>
+              </div>
+              <p class="features__item-pic">
+                <img src="./img/chat.svg" width="193" height="193" alt="Chat Figure">
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-main__registration registration">
+        <h2 class="visually-hidden">Регистрация Клиента</h2>
+        <p class="registration__subject">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
+        <button type="button" class="registration__btn">Регистрация</button>
+      </section>
+      <section class="modal-js--off modal">
+        <div class="modal__wrapper">
+          <h2 class="visually-hidden">Данные авторизации</h2>
+          <span class="modal__close">
+            <svg class="modal__cross-icon" width="14" height="14">
+              <use xlink:href="./img/sprite.svg#icon-cross"></use>
+            </svg>
+            </span>
+          <form class="modal__authorization-form" action="#" method="GET">
+            <fieldset class="modal__field">
+              <legend class="modal__title">Авторизация</legend>
+              <div class="modal__inner-wrapper">
+                <label class="modal__label" for="email">E-mail</label>
+                <div class="modal__input-wrap">
+                  <input class="modal__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                  <svg class="modal__check-icon" width="14" height="14">
+                    <use xlink:href="./img/sprite.svg#icon-check"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="modal__inner-wrapper">
+                <label class="modal__label" for="password">Пароль</label>
+                <div class="modal__input-wrap">
+                  <input class="modal__input" type="password" id="password" name="password" maxlength="12" size="60" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Ввод должен содержать как минимум одну цифру, одну заглавную и строчную букву и как минимум 8 или более символов." placeholder="Введите пароль" required>
+                  <svg class="modal__check-icon" width="14" height="14">
+                    <use xlink:href="./img/sprite.svg#icon-check"></use>
+                  </svg>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="modal__btn">Войти</button>
+          </form>
+        </div>
+      </section>
+      <div class="overlay" id="overlay-modal"></div>
+    </main>
+  </div>
+  <script src="./js/index.js"></script>
 </body>
 </html>

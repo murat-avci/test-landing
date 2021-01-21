@@ -1,0 +1,29 @@
+.user-list__login {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 325;
+  color: $text;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $button;
+
+    .user-list__login-icon {
+      stroke: $button;
+      fill: $button;
+    }
+  }
+}
+
+.user-list__login-icon {
+  position: absolute;
+  top: 0;
+  left: -36px;
+  stroke: $text;
+  fill: $text;
+  width: 25px;
+  height: 100%;
+}

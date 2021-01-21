@@ -1,0 +1,12 @@
+.site-list__link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 325;
+  color: $text;
+  text-decoration: none;
+
+  &:hover {
+    color: $button;
+  }
+}

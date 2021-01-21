@@ -2,6 +2,10 @@
   margin: 130px auto 0;
 }
 
+.features__title {
+  @include text(40px,52px,600,$title);
+}
+
 .features__wrapper {
   margin-top: 50px;
 }
@@ -14,21 +18,125 @@
 
 .features__item {
   display: flex;
-  outline: 1px solid blue;
+  background-color: $bg-feature;
   padding: 21px 10px 21px 40px;
+  border-radius: 6px;
+
+  &:nth-child(3) {
+    .features__item-description {
+      padding-right: 10px;
+    }
+  }
 }
 
 .features__inner-wrapper {
-  outline: 1px solid red;
   margin: 22px 0;
+  min-width: 292px;
+}
+
+.features__item-title {
+  @include text(22px,29px,600,$title);
+  font-family: "Segoe UI", sans-serif;
 }
 
 .features__item-description {
+  @include text(16px,23px,normal,$text);
+  font-family: "Segoe UI", sans-serif;
   margin-top: 22px;
+  padding-right: 20px;
 }
 
 .features__item-pic {
   min-width: 193px;
+  width: max-content;
   height: 193px;
-  margin-left: 35px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .features {
+    margin: 60px calc((60 / 1023) * 100%) 0;
+  }
+
+  .features__title {
+    @include text(32px,45px,600,$title);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .features__wrapper {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .features__list {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    width: 100%;
+  }
+
+  .features__item {
+    padding: 21px 10px 21px 40px;
+    border-radius: 6px;
+  }
+
+  .features__item-pic {
+    margin-left: auto;
+    margin-right: 0;
+    max-width: max-content;
+  }
+
+  @media (max-width: $mobile-width) {
+    .features {
+      margin: 20px 20px 0;
+    }
+
+    .features__title {
+      @include text(22px,28px,600,$title);
+    }
+
+    .features__item {
+      padding: 20px;
+      justify-content: baseline;
+      min-width: 280px;
+      width: 100%;
+    }
+
+    .features__inner-wrapper {
+      order: 2;
+      margin-left: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+      min-width: 100px;
+      min-height: 110px;
+    }
+
+    .features__item-title {
+      @include text(16px,20px,600,$title);
+      text-align: left;
+      margin: 10px auto;
+      width: 100%;
+    }
+
+    .features__item-description {
+      @include text(12px,18px,normal,$text);
+      text-align: left;
+      margin-top: 15px;
+      width: 100%;
+      min-width: 100%;
+    }
+
+    .features__item-pic {
+      min-width: 90px;
+      height: max-content;
+      margin-left: 0;
+      order: 1;
+
+      & img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
 }

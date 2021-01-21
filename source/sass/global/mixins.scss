@@ -1,0 +1,13 @@
+@mixin text($size,$height,$weight,$color) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $height;
+  color: $color;
+}
+
+@mixin btn-hover ($background-color,$color) {
+  background-color: rgba($color: $background-color, $alpha: 0.7);
+  color: rgba($color: $color, $alpha: 0.7);
+}
